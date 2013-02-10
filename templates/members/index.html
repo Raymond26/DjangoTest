@@ -1,0 +1,11 @@
+Members List
+
+{% if members %}
+    <ul>
+    {% for member in members %}
+        <li>{{ member.username }} - {{ member.location }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+
+{% endif %}

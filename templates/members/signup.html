@@ -1,0 +1,8 @@
+Signup Page
+
+<form action="" method="post">
+    {% csrf_token %}
+    {% if form.errors %}<p>Please fix the following errors:</p>{% endif %}
+    {{ form.as_p }}
+    <input type="submit" value="Sign up!"/>
+</form>
