@@ -24,11 +24,21 @@ class MemberManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
+def avatar_file_name(instance, filename):
+    return '/'.join(['avatars', str(instance.pk), filename])
+
 class Member(AbstractBaseUser):
     username = models.CharField(max_length=40, unique=True, db_index=True)
     email = models.EmailField(max_length=254, unique=True) #make this unique when you're done testing
     date_of_birth = models.DateField(null=True, blank=True)
     location = models.CharField(max_length=100, null=True, blank=True)
+
+    register_date = models.DateField(auto_now=True)
+    # should be in kilobytes
+    disk_space_used = models.IntegerField(null=True)
+    # need to specify default path
+    # avatar_pic_filepath = models.FilePathField(null=True)
+    avatar_pic = models.FileField(upload_to=avatar_file_name)
 
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)

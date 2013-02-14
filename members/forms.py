@@ -30,3 +30,6 @@ class RegistrationForm(forms.ModelForm):
 class LoginForm(forms.Form):
     username = forms.CharField(label='Username')
     password = forms.CharField(label='Password', widget=forms.PasswordInput)
+
+class AvatarUploadForm(forms.Form):
+    file = forms.FileField(label='Avatar Pic')

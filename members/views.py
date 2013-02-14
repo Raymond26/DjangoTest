@@ -1,8 +1,9 @@
 from members.models import Member, MemberManager
-from members.forms import RegistrationForm, LoginForm
+from members.forms import RegistrationForm, LoginForm, AvatarUploadForm
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
+from django.core.urlresolvers import reverse
 
 import json
 
@@ -46,7 +47,36 @@ def loginRequest(request):
         return render(request, 'members/login.html', {'form': form})
 
 def logoutRequest(request):
-    pass
+    logout(request)
+    return HttpResponseRedirect('/members/')
+
+def detail_member(request, member_id):
+    member = Member.objects.get(pk=member_id)
+    avatar_upload_form = AvatarUploadForm()
+    return render(request, 'members/detail.html', {
+        'member': member,
+        'avatar_upload_form': avatar_upload_form,
+    })
+
+def upload_avatar(request):
+    if request.user.is_authenticated():
+        if request.method == 'POST':
+            avatar_upload_form = AvatarUploadForm(request.POST, request.FILES)
+            if avatar_upload_form.is_valid:
+                member = Member.objects.get(username=request.user.username)
+                member.avatar_pic = request.FILES['file']
+                member.save()
+            return HttpResponseRedirect(reverse('members:detail', kwargs={
+                'member_id': request.user.pk
+            }))
+
+        else:
+            return HttpResponseRedirect(reverse('members:detail', kwargs={
+                'member_id': request.user.pk
+            }))
+    else:
+        return HttpResponseRedirect(reverse('login'))
+
 
 def members_json(request):
     member_list = [member.get_username_with_id() for member in Member.objects.all()]

@@ -1,11 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} Members List {% endblock %}
+
+{% block content %}
 Members List
 
 {% if members %}
     <ul>
     {% for member in members %}
-        <li>{{ member.username }} - {{ member.location }}</li>
+        <li><a href="{% url 'members:detail' member.id %}">{{ member.username }}</a> - {{ member.location }}</li>
     {% endfor %}
     </ul>
 {% else %}
 
 {% endif %}
+
+{% endblock %}

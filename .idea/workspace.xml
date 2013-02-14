@@ -4,12 +4,17 @@
     <list default="true" id="1645945a-1d50-4209-b60a-2c5761957c4d" name="Default" comment="" />
     <ignored path="DjangoTest.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/views.py" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360475541921" ignored="false" />
-    <file path="/urls.py" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360475560317" ignored="false" />
-    <file path="/signup.html" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360473657921" ignored="false" />
-    <file path="/forms.py" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360474689321" ignored="false" />
-    <file path="/models.py" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360472355291" ignored="false" />
-    <file path="/login.html" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360474991185" ignored="false" />
+    <file path="/views.py" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360816222842" ignored="false" />
+    <file path="/urls.py" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360814029634" ignored="false" />
+    <file path="/signup.html" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360481274447" ignored="false" />
+    <file path="/forms.py" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360798759839" ignored="false" />
+    <file path="/models.py" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360815309024" ignored="false" />
+    <file path="/login.html" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360481318129" ignored="false" />
+    <file path="/settings.py" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360815088738" ignored="false" />
+    <file path="/base_site.html" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360480711296" ignored="false" />
+    <file path="/base.html" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360483556272" ignored="false" />
+    <file path="/index.html" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360485782147" ignored="false" />
+    <file path="/detail.html" changelist="1645945a-1d50-4209-b60a-2c5761957c4d" time="1360814126554" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,22 +31,22 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DjangoTest/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="67" selection-start="890" selection-end="890" vertical-scroll-proportion="0.89032257">
-              <folding />
+            <state line="24" column="36" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serializers.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/members/serializers.py">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/polls/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="73" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,7 +54,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/members/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="86" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
+            <state line="8" column="82" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -58,7 +63,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/members/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="8" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.0">
+            <state line="58" column="6" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -66,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/members/login.html">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DjangoTest/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="20" selection-start="63" selection-end="63" vertical-scroll-proportion="-1.9615384">
+            <state line="56" column="41" selection-start="1873" selection-end="1873" vertical-scroll-proportion="-14.576923">
               <folding />
             </state>
           </provider>
@@ -78,7 +83,7 @@
       <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/members/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="76" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0">
+            <state line="34" column="46" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -86,40 +91,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/members/signup.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="59" selection-start="124" selection-end="124" vertical-scroll-proportion="-2.6153846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/members/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="16" selection-start="30" selection-end="30" vertical-scroll-proportion="-1.3076923">
+            <state line="10" column="54" selection-start="220" selection-end="220" vertical-scroll-proportion="-6.5384617">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/members/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="48" selection-start="292" selection-end="292" vertical-scroll-proportion="-5.230769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/members/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="26" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+            <state line="40" column="61" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.9384858">
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/polls/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="7" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -134,29 +130,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/polls/results.html" />
-        <option value="$PROJECT_DIR$/polls/views.py" />
-        <option value="$PROJECT_DIR$/polls/models.py" />
         <option value="$PROJECT_DIR$/polls/tests.py" />
         <option value="$PROJECT_DIR$/members/admin.py" />
-        <option value="$PROJECT_DIR$/templates/members/index.html" />
-        <option value="$PROJECT_DIR$/DjangoTest/settings.py" />
         <option value="$PROJECT_DIR$/members/serializers.py" />
-        <option value="$PROJECT_DIR$/members/urls.py" />
         <option value="$PROJECT_DIR$/polls/urls.py" />
-        <option value="$PROJECT_DIR$/members/models.py" />
+        <option value="$PROJECT_DIR$/templates/base_site.html" />
         <option value="$PROJECT_DIR$/templates/members/signup.html" />
-        <option value="$PROJECT_DIR$/members/forms.py" />
         <option value="$PROJECT_DIR$/templates/members/login.html" />
-        <option value="$PROJECT_DIR$/members/views.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/members/index.html" />
+        <option value="$PROJECT_DIR$/members/forms.py" />
         <option value="$PROJECT_DIR$/DjangoTest/urls.py" />
+        <option value="$PROJECT_DIR$/members/urls.py" />
+        <option value="$PROJECT_DIR$/templates/members/detail.html" />
+        <option value="$PROJECT_DIR$/DjangoTest/settings.py" />
+        <option value="$PROJECT_DIR$/members/models.py" />
+        <option value="$PROJECT_DIR$/members/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="725" />
+    <option name="width" value="965" />
+    <option name="height" value="984" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -231,6 +227,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="polls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="members" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -286,6 +300,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manage.py" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -299,7 +315,7 @@
       <PyConsoleSettings />
     </option>
   </component>
-  <component name="RunManager" selected="Django server.DjangoTest">
+  <component name="RunManager" selected="Python.Runserver">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -393,6 +409,13 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="false" name="DjangoTest" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -400,7 +423,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="DjangoTest.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <module name="DjangoTest" />
@@ -417,8 +440,45 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="Unnamed" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="DjangoTest" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Runserver" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/2.7/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="DjangoTest" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver_plus" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Django server.DjangoTest" />
+      <item index="1" class="java.lang.String" itemvalue="Django tests.Unnamed" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Runserver" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -449,18 +509,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="725" extended-state="6" />
+    <frame x="0" y="22" width="965" height="984" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16207455" sideWeight="0.59669423" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21762785" sideWeight="0.8078704" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5105348" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4033058" sideWeight="0.98719317" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19212963" sideWeight="0.9989071" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -529,62 +589,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/polls/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="35" selection-start="109" selection-end="109" vertical-scroll-proportion="-1.9615384" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoTest/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="21" selection-start="4670" selection-end="4670" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/members/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="73" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="70" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.7258065">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base_site.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/members/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="86" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="37" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/members/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="30" selection-end="30" vertical-scroll-proportion="-1.3076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/members/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -599,51 +603,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/members/signup.html">
+    <entry file="file://$PROJECT_DIR$/polls/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="59" selection-start="124" selection-end="124" vertical-scroll-proportion="-2.6153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/members/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="26" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/members/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="76" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/members/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="63" selection-end="63" vertical-scroll-proportion="-1.9615384">
+        <state line="13" column="11" selection-start="230" selection-end="230" vertical-scroll-proportion="-8.5">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="70" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/polls/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="51" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.51704544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/members/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="46" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/members/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="311" selection-end="311" vertical-scroll-proportion="0.38325283">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/members/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="54" selection-start="220" selection-end="220" vertical-scroll-proportion="-6.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/members/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="48" selection-start="292" selection-end="292" vertical-scroll-proportion="-5.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoTest/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="41" selection-start="1873" selection-end="1873" vertical-scroll-proportion="-14.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/members/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="82" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoTest/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="36" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/members/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="8" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.0">
+        <state line="58" column="6" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoTest/urls.py">
+    <entry file="file://$PROJECT_DIR$/members/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="67" selection-start="890" selection-end="890" vertical-scroll-proportion="0.89032257">
-          <folding />
+        <state line="40" column="61" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.9384858">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

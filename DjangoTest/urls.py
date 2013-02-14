@@ -1,7 +1,10 @@
 from django.conf.urls import patterns, include, url
+from django.conf import settings
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
+from django.conf.urls.static import static
+
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -21,4 +24,4 @@ urlpatterns = patterns('',
     url(r'^login/', 'members.views.loginRequest', name='login'),
     url(r'^logout/', 'members.views.logoutRequest', name='logout'),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
-)
+) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

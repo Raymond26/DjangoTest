@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Member Profile - {{ member.username }}{% endblock %}
+
+{% block content %}
+    <p>Username - {{ member.username }}</p>
+    <p>Email - {{ member.email }}</p>
+    <p>Location - {{ member.location }}</p>
+    <form action="{% url 'members:upload_avatar' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>{{ avatar_upload_form }}</p>
+        <p><input type="submit" value="Upload Avatar"/></p>
+    </form>
+
+{% endblock %}
