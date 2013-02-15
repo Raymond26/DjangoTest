@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Member Gallery - {{ member.username }}{% endblock %}
+
+{% block content %}
+    {% for photo in gallery.photos.all %}
+        <img src="{{ photo.image.url }}"/>
+    {% endfor %}
+{% endblock %}

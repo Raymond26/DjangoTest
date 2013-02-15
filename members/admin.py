@@ -65,14 +65,15 @@ class MyUserAdmin(UserAdmin):
         ('Personal info', {'fields': ('date_of_birth',)}),
         ('Permissions', {'fields': ('is_admin',)}),
         ('Important dates', {'fields': ('last_login',)}),
-        ('Location', {'fields': ('location',)})
-        )
+        ('Location', {'fields': ('location',)}),
+        ('Galleries', {'fields': ('main_gallery',)}),
+    )
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
             'fields': ('username', 'email', 'date_of_birth', 'location', 'password1', 'password2')}
-            ),
-        )
+        ),
+    )
     search_fields = ('email',)
     ordering = ('email',)
     filter_horizontal = ()

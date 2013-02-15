@@ -20,6 +20,7 @@ urlpatterns = patterns('',
 
     url(r'^polls/', include('polls.urls', namespace="polls")),
     url(r'^members/', include('members.urls', namespace="members")),
+    url(r'^galleries/', include('galleries.urls', namespace="galleries")),
     url(r'^signup/', 'members.views.registration', name='signup'),
     url(r'^login/', 'members.views.loginRequest', name='login'),
     url(r'^logout/', 'members.views.logoutRequest', name='logout'),

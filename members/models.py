@@ -3,6 +3,7 @@ from django.db import models
 from django.contrib.auth.models import (
     BaseUserManager, AbstractBaseUser
 )
+from galleries.models import UserPublicGallery
 
 class MemberManager(BaseUserManager):
     def create_user(self, username, email, password=None):
@@ -33,12 +34,14 @@ class Member(AbstractBaseUser):
     date_of_birth = models.DateField(null=True, blank=True)
     location = models.CharField(max_length=100, null=True, blank=True)
 
-    register_date = models.DateField(auto_now=True)
+    register_date = models.DateField(auto_now_add=True)
     # should be in kilobytes
     disk_space_used = models.IntegerField(null=True)
     # need to specify default path
     # avatar_pic_filepath = models.FilePathField(null=True)
     avatar_pic = models.FileField(upload_to=avatar_file_name)
+
+    main_gallery = models.OneToOneField(UserPublicGallery, null=True, blank=True)
 
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)

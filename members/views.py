@@ -1,5 +1,6 @@
 from members.models import Member, MemberManager
-from members.forms import RegistrationForm, LoginForm, AvatarUploadForm
+from members.forms import RegistrationForm, LoginForm, AvatarUploadForm, ImageUploadForm
+from galleries.models import ImageModel
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
@@ -53,9 +54,11 @@ def logoutRequest(request):
 def detail_member(request, member_id):
     member = Member.objects.get(pk=member_id)
     avatar_upload_form = AvatarUploadForm()
+    image_upload_form = ImageUploadForm()
     return render(request, 'members/detail.html', {
         'member': member,
         'avatar_upload_form': avatar_upload_form,
+        'image_upload_form': image_upload_form,
     })
 
 def upload_avatar(request):
@@ -70,6 +73,27 @@ def upload_avatar(request):
                 'member_id': request.user.pk
             }))
 
+        else:
+            return HttpResponseRedirect(reverse('members:detail', kwargs={
+                'member_id': request.user.pk
+            }))
+    else:
+        return HttpResponseRedirect(reverse('login'))
+
+def upload_image(request):
+    if request.user.is_authenticated():
+        if request.method == 'POST':
+            image_upload_form = ImageUploadForm(request.POST, request.FILES)
+            if image_upload_form.is_valid:
+                image = ImageModel(
+                    image=request.FILES['image'],
+                    description=request.POST['description'],
+                    owner=request.user
+                )
+                image.save()
+            return HttpResponseRedirect(reverse('members:detail', kwargs={
+                'member_id': request.user.pk
+            }))
         else:
             return HttpResponseRedirect(reverse('members:detail', kwargs={
                 'member_id': request.user.pk

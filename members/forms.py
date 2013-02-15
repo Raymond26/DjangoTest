@@ -33,3 +33,7 @@ class LoginForm(forms.Form):
 
 class AvatarUploadForm(forms.Form):
     file = forms.FileField(label='Avatar Pic')
+
+class ImageUploadForm(forms.Form):
+    image = forms.ImageField(label='User Image')
+    description = forms.CharField(widget=forms.widgets.Textarea())
