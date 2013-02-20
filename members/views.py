@@ -5,8 +5,12 @@ from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
 from django.core.urlresolvers import reverse
+from django.core.files.uploadedfile import InMemoryUploadedFile
+from django.core.files.base import ContentFile
+from PIL import Image
 
 import json
+import StringIO
 
 def index(request):
     # Returning all objects for now.. too much data being sent, will fix later
@@ -85,12 +89,28 @@ def upload_image(request):
         if request.method == 'POST':
             image_upload_form = ImageUploadForm(request.POST, request.FILES)
             if image_upload_form.is_valid:
-                image = ImageModel(
-                    image=request.FILES['image'],
+
+                image = request.FILES['image']
+                thumb_io = StringIO.StringIO()
+                size = 256, 256
+                thumbnail = Image.open(image)
+                thumbnail.thumbnail(size, Image.ANTIALIAS)
+                thumbnail.save(thumb_io,format='JPEG')
+                thumb_file = InMemoryUploadedFile(thumb_io, None, image.name, image.content_type, thumb_io.len, None)
+
+                member = Member.objects.get(pk=request.user.pk)
+                image_model = ImageModel(
+                    image=image,
                     description=request.POST['description'],
-                    owner=request.user
+                    filesize=image.size,
+                    owner=member,
+                    thumbnail=thumb_file
                 )
-                image.save()
+                image_model.save()
+
+                member.main_gallery.add_photo(image_model)
+                member.save()
+
             return HttpResponseRedirect(reverse('members:detail', kwargs={
                 'member_id': request.user.pk
             }))

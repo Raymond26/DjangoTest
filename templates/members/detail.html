@@ -20,7 +20,7 @@
     {% if member.member_galleries %}
         <ul>
         {% for gallery in member.member_galleries.all %}
-            <li><a href="{% url 'galleries:member_main_gallery' member.pk %}">{{ gallery.title }}</a></li>
+            <li><a href="{% url 'galleries:public_member_gallery' gallery.pk %}">{{ gallery.title }}</a></li>
         {% endfor %}
         </ul>
     {% endif %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}{{ member.username }}'s Photo{% if photo.title %} - {{ photo.title }}{% endif %}{% endblock %}
+
+{% block content %}
+    <img src="{{ photo.image.url }}"/>
+    <p>Views - {{ photo.view_count }}</p>
+    <div id="comments">
+    <p><b><u>Comments</u></b></p>
+    {% if photo.comment_tree %}
+        {% if photo.comment_tree.comments.count > 0 %}
+        <ul>
+        {% for comment in photo.comment_tree.comments.all %}
+            <li><b>{{ comment.owner.username }}</b> - {{ comment.text }}</li>
+        {% endfor %}
+        </ul>
+        {% else %}
+            There are no comments for this photo yet.
+        {% endif %}
+    {% else %}
+        No comments to display.
+    {% endif %}
+    </div>
+{% endblock %}

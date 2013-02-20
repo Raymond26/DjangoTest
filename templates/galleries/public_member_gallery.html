@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}{{ member.username }}'s Gallery - {{ gallery.title }}{% endblock %}
+
+{% block content %}
+    {% for photo in gallery.photos.all %}
+        <a href="{% url 'galleries:public_member_photo' gallery_id=gallery.pk photo_id=photo.pk %}"><img src="{{ photo.thumbnail.url }}"/></a>
+    {% endfor %}
+{% endblock %}
